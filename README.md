@@ -3,7 +3,7 @@ Mike-ntrt Infra repository
 
 ### HW Lec 6 - Cloud Testapp
 
-testapp_IP = 178.154.225.204  
+testapp_IP = 178.154.231.190  
 testapp_port = 9292  
 
 #### install Testapp manualy by scripts
