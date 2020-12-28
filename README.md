@@ -5,9 +5,9 @@ Mike-ntrt Infra repository
 
 create(bake) an OS image with app using template:  
 `packer/immutable.json` - template with builder and provisioning blocks  
-`/packer/variables.json.examples` - vars for template  
-`/packer/files/puma.service` - systemd simple unit(type - service) to start app after after boot OS  
-`/packer/files/deploy.sh`  copy unit file into `/etc/systemd/system/`, enable and start service  
+`packer/variables.json.examples` - vars for template  
+`packer/files/puma.service` - systemd simple unit(type - service) to start app after after boot OS  
+`packer/scripts/deploy.sh`  copy unit file into `/etc/systemd/system/`, enable and start service  
 
 how to start the build:  
 cd `./packer`  
