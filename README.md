@@ -1,6 +1,19 @@
 # Mike-ntrt_infra
 Mike-ntrt Infra repository
 
+### HW Lec 7 - Packer Base
+
+create(bake) an OS image with app using template:  
+`packer/immutable.json` - template with builder and provisioning blocks  
+`packer/variables.json.examples` - vars for template  
+`packer/files/puma.service` - systemd simple unit(type - service) to start app after after boot OS  
+`packer/scripts/deploy.sh`  copy unit file into `/etc/systemd/system/`, enable and start service  
+
+how to start the build:  
+cd `./packer`  
+`packer validate -var-file=./variables.json ./immutable.json`  
+`packer build -var-file=./variables.json ./immutable.json`  
+
 ### HW Lec 6 - Cloud Testapp
 
 testapp_IP = 178.154.231.190  
