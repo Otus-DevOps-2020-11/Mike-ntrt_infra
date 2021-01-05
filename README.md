@@ -1,6 +1,14 @@
 # Mike-ntrt_infra
 Mike-ntrt Infra repository
 
+### HW Lec 8 - Terraform-1
+
+create 2 app instances with provisioning by "file" and "remote-exec":  
+`/terraform/main.tf` describes instances with multiple resources by `count`  
+create a Load Balancer:  
+`/terraform/lb.tf` - describes a Target group and a YC LB resources with a dynamic "target" block uses `for_each` loop  
+to inerate over instances
+
 ### HW Lec 7 - Packer Base
 
 create(bake) an OS image with app using template:  
