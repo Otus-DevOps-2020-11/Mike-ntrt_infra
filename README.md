@@ -6,8 +6,7 @@ Mike-ntrt Infra repository
 create 2 app instances with provisioning by "file" and "remote-exec":  
 `/terraform/main.tf` describes instances with multiple resources by `count`  
 create a Load Balancer:  
-`/terraform/lb.tf` - describes a Target group and a YC LB resources with a dynamic "target" block uses `for_each` loop  
-to inerate over instances
+`/terraform/lb.tf` - describes a Target group and a YC LB resources with a dynamic "target" block uses `for_each` loop to inerate over instances  
 
 ### HW Lec 7 - Packer Base
 
