@@ -12,7 +12,8 @@ it contains the same `main.tf` files and may be modified by vars
 
 #### remote state  
 
-`terraform/stage/backend.tf` & `terraform/prod/backend.tf` describes YC s3-like bucket for saving terraform state file  
+`terraform/stage/backend.tf` & `terraform/prod/backend.tf` describes YC s3-like bucket  
+for saving terraform state file  
 the bucket was created manualy in YC web cli  
 
 #### app deploy
