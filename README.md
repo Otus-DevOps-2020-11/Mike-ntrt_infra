@@ -1,12 +1,31 @@
 # Mike-ntrt_infra
 Mike-ntrt Infra repository
 
+### HW Lec 8 - Terraform-2
+
+#### stage & prod  
+
+`packer/app.json` & `packer/db.json` - templates for creation base images for DB and App VM  
+`terraform/modules/` contains 2 modules: DB and App, which used by Stage and Prod TF main files  
+`terraform/stage/` & `terraform/prod/` - an example of the infrastructure code reusability  
+it contains the same `main.tf` files and may be modified by vars  
+
+#### remote state  
+
+`terraform/stage/backend.tf` & `terraform/prod/backend.tf` describes YC s3-like bucket  
+for saving terraform state file  
+the bucket was created manualy in YC web cli  
+
+#### app deploy
+
+`terraform/modules/app/main.tf` contains provisioners for the app  
+  
 ### HW Lec 8 - Terraform-1
 
 create 2 app instances with provisioning by "file" and "remote-exec":  
-`/terraform/main.tf` describes instances with multiple resources by `count`  
+`terraform/main.tf` describes instances with multiple resources by `count`  
 create a Load Balancer:  
-`/terraform/lb.tf` - describes a Target group and a YC LB resources with a dynamic "target" block uses `for_each` loop to inerate over instances  
+`terraform/lb.tf` - describes a Target group and a YC LB resources with a dynamic "target" block uses `for_each` loop to inerate over instances  
 
 ### HW Lec 7 - Packer Base
 
