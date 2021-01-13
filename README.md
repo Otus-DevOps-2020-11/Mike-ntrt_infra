@@ -9,11 +9,10 @@ Mike-ntrt Infra repository
 
 the command `ansible-inventory -i inventory.yml --list` may help to investigate the inner inventory in JSON  
 
-#### dynamic inventory  
+#### dynamic inventory
 
-`ansible/dynamic-inventory.sh.json` - the bash script that returns inventory in JSON format
-`ansible/ansible.cfg` contains a path to dynamic inventory script
-
+`ansible/dynamic-inventory.sh.json` - the bash script that returns inventory in JSON format  
+`ansible/ansible.cfg` contains a path to dynamic inventory script  
 
 ### HW Lec 9 - Terraform-2
 
