@@ -1,6 +1,15 @@
 # Mike-ntrt_infra
 Mike-ntrt Infra repository
 
+### HW Lec 11 - Ansible-2
+
+`ansible/site.yml` - the ansible playbook that imports 3 other playbooks:  
+`ansible/db.yml` - for configure and restart the mongo db service  
+`ansible/app.yml` - for add a puma service and an app config  
+`ansible/deploy.yml` - for fetch the app code and start the app service
+
+`ansible/ansible.cfg` uses dynamic inventory script `ansible/dynamic-inventory.sh.json` that contains the var "db_host"  
+
 ### HW Lec 10 - Ansible-1
 
 `ansible/inventory` - the static inventory file in INI format  
